@@ -14,13 +14,13 @@ fn main() -> wry::Result<()> {
 
   let event_loop = EventLoop::new();
   let window = WindowBuilder::new()
-    .with_title("Hello World")
+    .with_title("Test")
     .build(&event_loop)?;
-  let webview = WebViewBuilder::new(window)?.with_url("https://html5test.com")?;
+  let webview = WebViewBuilder::new(window)?.with_url("https://figma.com/mirror")?;
 
   #[cfg(debug_assertions)]
   let webview = webview.with_devtools(true);
-
+  //let webview = webview.
   let webview = webview.build()?;
 
   #[cfg(debug_assertions)]
